@@ -7,82 +7,39 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
     </head>
     <body>
-    <div id="page">
-        <div class="nav">
+    <div id="wrapper">
+        <div id="content">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Weather</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="location center">
+                <img src="marker.png" alt="location pointer"></img>
+                <h1 class="location"></h1>
+            </div>
+
+            <div id="weather_cont" class="center">
+                <ul id="scroller">
+                    <!-- The forecast items will go here -->
+                </ul>	
+            </div>
+        </div>
+        <div class="footer">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
+                <li>· Created by Maria Rosil ·</li>
+                <li>· Lviv 2015 ·</li>
+                <li><a href="https://www.facebook.com/MariaRosil">My Facebook</a></li>
             </ul>
         </div>
-        <div>
-            <img src="" alt="location pointer"></img>
-            <h1>Lviv</h1>
-        </div>
-        <div id="table">
-            <ul class="day">
-                <li class="table_day_name">Today</li>
-                <li class="table_day_date">Jul 11</li>
-                <li class="table_day_pic"><a href="sunny.png"></a></li>
-                <li class="table_day_descr">Sunny</li>
-                <li class="table_day_grade">28</li>
-                <li><a href="celsium.png"></a></li>
-            </ul>
-            <ul class="day">
-                <li class="table_day_name">Tomorrow</li>
-                <li class="table_day_date">Jul 12</li>
-                <li class="table_day_pic"><a href="cloudy.png"></a></li>
-                <li class="table_day_descr">Cloudy</li>
-                <li class="table_day_grade">25</li>
-                <li><a href="celsium.png"></a></li>
-            </ul>
-            <ul class="day">
-                <li class="table_day_name">Mon</li>
-                <li class="table_day_date">Jul 13</li>
-                <li class="table_day_pic"><a href="rainy.png"></a></li>
-                <li class="table_day_descr">Rainy</li>
-                <li class="table_day_grade">23</li>
-                <li><a href="celsium.png"></a></li>
-            </ul>            
-            <ul class="day">
-                <li class="table_day_name">Tue</li>
-                <li class="table_day_date">Jul 14</li>
-                <li class="table_day_pic"><a href="rainy.png"></a></li>
-                <li class="table_day_descr">Rainy</li>
-                <li class="table_day_grade">23</li>
-                <li><a href="celsium.png"></a></li>
-            </ul>
-            <ul class="day">
-                <li class="table_day_name">Wed</li>
-                <li class="table_day_date">Jul 15</li>
-                <li class="table_day_pic"><a href="rainy.png"></a></li>
-                <li class="table_day_descr">Rainy</li>
-                <li class="table_day_grade">23</li>
-                <li><a href="celsium.png"></a></li>
-            </ul>
-            <ul class="day">
-                <li class="table_day_name">Thur</li>
-                <li class="table_day_date">Jul 16</li>
-                <li class="table_day_pic"><a href="rainy.png"></a></li>
-                <li class="table_day_descr">Rainy</li>
-                <li class="table_day_grade">23</li>
-                <li><a href="celsium.png"></a></li>
-            </ul>
-        </div>
-        <footer>
-            <div class="align-left">
-                <p>· Created by Maria Rosil ·</p>
-                <p>· Lviv 2015 ·</p>
-            </div>
-            <div class="align-right">
-                <div class="social-menu">
-                    <ul id="social-icons">
-                        <li><a href="https://www.facebook.com/MariaRosil"></a></li>
-                        <li><a href="https://instagram.com/maria.rosil/"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
     </div>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <script src="js/weatherService.js"></script>
+    <script src="js/script.js"></script>
     </body>
 </html>
