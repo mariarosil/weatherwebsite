@@ -29,15 +29,10 @@ $(function(){
 	}
 
 	function addWeather(icon, day, condition, temp) {
-
-		//var markup = '<li>'+
-		//	'<img src="img/icons/'+ icon +'.png" />'+
-			//' <p class="day">'+ day +'</p> <p class="cond">'+ condition +
-			//'</p></li>';
         
         var markup = '<li>' +
 			'<p class="table_day_name">' + day +'</p>' +
-            '<p class="table_day_pic"><img src="icons/'+ icon + '.png" /></p>' +
+            '<p class="table_day_pic"><img src="img/'+ icon + '.png" /></p>' +
 			'<p class="table_day_descr">' + condition + '</p>' +
             '<p class="table_day_descr">' + temp + '</p>' +
 			'</p></li>';
