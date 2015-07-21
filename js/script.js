@@ -37,7 +37,7 @@ $(function(){
         
         var markup = '<li>' +
 			'<p class="table_day_name">' + day +'</p>' +
-            '<p class="table_day_pic"><img src="img/icons/'+ icon + '.png" /></p>' +
+            '<p class="table_day_pic"><img src="icons/'+ icon + '.png" /></p>' +
 			'<p class="table_day_descr">' + condition + '</p>' +
             '<p class="table_day_descr">' + temp + '</p>' +
 			'</p></li>';

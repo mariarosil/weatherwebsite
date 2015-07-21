@@ -3,11 +3,46 @@
     <head>
         <title>Weather Forecast</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="main.css" media="screen">
+        <link rel="stylesheet" href="feedback.css" media="screen">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <nav>
-           
-        </nav>
+        <div class="content">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Weather</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+            <form id="contact" method="post" action="">
+        
+                <h1>Leave your feedback</h1>
+                <ul>
+                    <li>
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" required />
+                    </li>
+                    <li>
+                        <label for="email">Your email</label>
+                        <input type="email" name="email" id="email" pattern="*@-.-. " required />
+                    </li>
+                    <li>
+                        <label for="comment">Your comment</label>
+                        <textarea name="text" id="comment" required></textarea>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>· Created by Maria Rosil ·</li>
+                <li>· Lviv 2015 ·</li>
+                <li><a href="https://www.facebook.com/MariaRosil">My Facebook</a></li>
+            </ul>
+        </div>
     </body>
 </html>
